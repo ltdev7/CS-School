@@ -38,3 +38,10 @@ int main(){
   formattaCogn(tab[NUM_STUD]);
   int stud = studenti10(tab[NUM_STUD]);
 }
+
+caricaTab(studente t[]){
+  for(int i++; i <= NUM_STUD; i++);{
+    printf("inserisci nome studente:\t")
+    scanf("%d", )
+  }
+}
