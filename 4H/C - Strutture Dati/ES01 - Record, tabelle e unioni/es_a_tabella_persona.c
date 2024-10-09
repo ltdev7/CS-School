@@ -1,3 +1,6 @@
+/*
+OBIETTIVO: Scrivere un programma C che definisca la struttura “persona” composta da nome, cognome, indirizzo, provincia e data di nascita. Si richieda all’utente di inserire tutti i dati e si stampino a video. 
+*/
 #include <stdio.h>
 #define N 3
 
