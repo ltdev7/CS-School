@@ -39,9 +39,9 @@ int main(){
   int stud = studenti10(tab[NUM_STUD]);
 }
 
-caricaTab(studente t[]){
-  for(int i++; i <= NUM_STUD; i++);{
-    printf("inserisci nome studente:\t")
-    scanf("%d", )
+void caricaTab(Studente t[]){
+  for(int i = 0; i <= NUM_STUD; i++);{
+    printf("inserisci nome studente:\t");
+    scanf("%s", tab[i].cognome);
   }
 }
