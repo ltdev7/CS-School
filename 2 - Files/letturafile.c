@@ -6,7 +6,7 @@ int main(){
     int err;
 
     FILE *pfile;
-    err = fopen_s(&pfile, NomeFile, "r");
+    pfile = fopen(NomeFile, "r");
 
     if(err == 0){
         while(!feof(pfile)){
