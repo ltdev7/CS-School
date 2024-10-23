@@ -35,6 +35,10 @@ int studenti10(Studente t[]); //Conta gli studenti con almeno un voto pari a 10.
 int main()
 {
     Studente Tab[NUM_STUD];
+    int ricerca;
+    char cogn[20];
+
+    ricerca = ricercaCogn(Tab, cogn);
     caricaTab(Tab);
     StampaTab(Tab);
 
@@ -72,5 +76,21 @@ void StampaTab(Studente t[])
       printf("%d ", t[i].voti[j]);
     }
     printf("\n");
+  }
+}
+
+int ricercaCogn(Studente t[], char cogn[])
+{
+  scanf("%s", cogn);
+  for(int i = 0; i < NUM_STUD; i++)
+  {
+    if(strcmp(t[i].cognome, cogn) == 0)
+    {
+      return 1;
+    }
+      else
+      {
+        return 0;
+      }
   }
 }
