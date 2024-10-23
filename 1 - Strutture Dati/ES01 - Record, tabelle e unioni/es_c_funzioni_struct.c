@@ -49,7 +49,7 @@ void caricaTab(Studente t[]){
 
 void stampatab(Studente t[]){
   for(int i = 0; i < NUM_STUD; i++){
-    printf("%s\t", Tab[i].cognome);
-    printf("%d/%d/%d"), Tab[i].data_nascita.giorno, Tab[i].data_nascita.mese , Tab[i].data_nascita.anno);
+    printf("%s\t", t[i].cognome);
+    printf("%d/%d/%d", t[i].data_nascita.giorno, t[i].data_nascita.mese , t[i].data_nascita.anno);
   }
 }
