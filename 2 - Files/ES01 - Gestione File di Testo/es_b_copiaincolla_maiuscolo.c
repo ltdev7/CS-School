@@ -22,8 +22,7 @@ int main()
    
     while((c = getc(pfile1)) != EOF)
     {
-        if(c >= 'a' && c <= 'z')
-        {
+        if(c >= 'a' && c <= 'z'){
             c = c - ('a' - 'A');
         }
         putc(c, pfile2);
