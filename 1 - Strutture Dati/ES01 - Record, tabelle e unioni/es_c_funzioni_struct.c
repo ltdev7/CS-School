@@ -35,12 +35,13 @@ int studenti10(Studente t[]); //Conta gli studenti con almeno un voto pari a 10.
 int main()
 {
     Studente Tab[NUM_STUD];
-    int ricerca;
+    int ricerca, stamp;
     char cogn[20];
 
     ricerca = ricercaCogn(Tab, cogn);
     caricaTab(Tab);
     StampaTab(Tab);
+    stamp = stampaMedia(Tab);
 
     return 0;
 }
@@ -92,5 +93,13 @@ int ricercaCogn(Studente t[], char cogn[])
       {
         return 0;
       }
+  }
+}
+
+int stampaMedia(Studente t[])
+{
+  for(int i = 0; i < NUM_STUD; i++)
+  {
+    
   }
 }
