@@ -12,16 +12,35 @@
 int main()
 {
     char *nomefile = "TestFiles/testo1.txt";
-    int c, cont = 0;
+    int c;
+    int car = 0;
+    int parole = 0;
+    int righe = 0;
 
-    FILE* pfile = fopen(pfile, "r");
+    FILE *pfile = fopen(nomefile, "r");
     if (pfile==NULL) {perror("Errore nell'apertura del file"); return 1;}
 
     while((c = getc(pfile)) != EOF)
     {
-        if(c >= 'a' && c <= 'z')
+        if(c >= '1' && c <= 'z')
         {
-            cont++;
+            car++;
+        }
+
+        if(c == ' ')
+        {
+            parole++;
+        }
+
+        if(c == '\n')
+        {
+            righe++;
         }
     }
+
+    printf("I caratteri sono: %d\n", car);
+    printf("Le parole sono: %d\n", parole);
+    printf("Le righe sono: %d\n", righe);
+
+    fclose(pfile);
 }
