@@ -22,20 +22,11 @@ int main()
 
     while((c = getc(pfile)) != EOF)
     {
-        if(c >= '1' && c <= 'z')
-        {
-            car++;
-        }
+        if(c >= '1' && c <= 'z') {car++;}
 
-        if(c == ' ')
-        {
-            parole++;
-        }
+        if(c == ' ') {parole++;}
 
-        if(c == '\n')
-        {
-            righe++;
-        }
+        if(c == '\n') {righe++;}
     }
 
     printf("I caratteri sono: %d\n", car);
@@ -43,4 +34,6 @@ int main()
     printf("Le righe sono: %d\n", righe);
 
     fclose(pfile);
+
+    return 0;
 }
