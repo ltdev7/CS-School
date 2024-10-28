@@ -33,7 +33,7 @@ int main()
     FILE *logFile  = fopen(NomeFile, "a");
 }
 
-void writeLog(const char *message)
+void writeLog(FILE *logFile, const char *message)
 {
     time_t currentTime;
     tm *localTime;
