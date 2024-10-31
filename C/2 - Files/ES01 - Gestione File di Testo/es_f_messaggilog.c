@@ -8,7 +8,7 @@
  * 
  * @author Lorenzo Tarragoni
  * @date 28/10/24
- */
+*/
 
 #include <stdio.h>
 #include <time.h>

@@ -7,7 +7,7 @@
  * 
  * @author Lorenzo Tarragoni
  * @date 25/10/24
- */
+*/
 
 #include <stdio.h>
 
