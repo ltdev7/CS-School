@@ -4,4 +4,4 @@ somma = 0
 for risultato in lista:
     somma += risultato
 
-print(somma)
+print(f"la somma di tutti i numeri all'interno della lista e' {somma}")
