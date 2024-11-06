@@ -28,8 +28,8 @@ int main()
 
     for(int i = 0; i < N; i++)
     {
-        scanf("%s", utenti[i].nome);
-        scanf("%s", utenti[i].cognome);
+        scanf("%s %s", utenti[i].nome, utenti[i].cognome);
+        printf("\n");
     }   
 
     scrivifile(nomefile, utenti, N);   
