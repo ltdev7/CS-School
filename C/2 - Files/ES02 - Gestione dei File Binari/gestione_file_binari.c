@@ -39,7 +39,7 @@ int main()
 
 void scrivifile(char nomefile[], persona utente[], int n)
 {
-    FILE* pfile = fopen(nomefile, "w");
+    FILE* pfile = fopen(nomefile, "wb");
     if (pfile == NULL) {perror("Errore nell'apertura del file"); return;}
 
     fwrite(utente, sizeof(persona), n, pfile);
