@@ -47,6 +47,4 @@ void scrivifile(char nomefile[], persona utente[], int n)
     fclose(pfile);
 }
 
-
-
-    
+// DA CORREGGERE GLI ERRORI QUANDO SCRIVE SUL FILE DI TESTO
