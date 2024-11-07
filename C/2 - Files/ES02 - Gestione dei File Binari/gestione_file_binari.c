@@ -18,7 +18,8 @@ typedef struct
     char cognome[20];
 } persona;
 
-void scrivifile(char nomefile[], persona utente[], int n);
+void scrivifile(char* nomefile, persona utente[], int n)
+void leggifile(char* nomefile)
 
 int main()
 {
@@ -28,8 +29,10 @@ int main()
 
     for(int i = 0; i < N; i++)
     {
-        scanf("%s", utenti[i].cognome);
+        printf("Inserisci il nome della persona numero %d", i);
         scanf("%s", utenti[i].nome);
+        printf("Inserisci il cognome della persona numero %d", i);
+        scanf("%s", utenti[i].cognome);
     }   
 
     scrivifile(nomefile, utenti, N);   
@@ -45,4 +48,9 @@ void scrivifile(char nomefile[], persona utente[], int n)
     fwrite(utente, sizeof(persona), n, pfile);
 
     fclose(pfile);
+}
+
+void leggifile(char* nomefile)
+{
+    
 }
