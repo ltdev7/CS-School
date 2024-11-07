@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 10
+#define N 3
 
 typedef struct
 {
@@ -28,8 +28,8 @@ int main()
 
     for(int i = 0; i < N; i++)
     {
-        scanf("%s %s", utenti[i].nome, utenti[i].cognome);
-        printf("\n");
+        scanf("%s", utenti[i].cognome);
+        scanf("%s", utenti[i].nome);
     }   
 
     scrivifile(nomefile, utenti, N);   
@@ -46,5 +46,3 @@ void scrivifile(char nomefile[], persona utente[], int n)
 
     fclose(pfile);
 }
-
-// DA CORREGGERE GLI ERRORI QUANDO SCRIVE SUL FILE DI TESTO
