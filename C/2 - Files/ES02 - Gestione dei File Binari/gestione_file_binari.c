@@ -52,5 +52,7 @@ void scrivifile(char nomefile[], persona utente[], int n)
 
 void leggifile(char* nomefile)
 {
-    
+    int buffer = 1;
+
+    fread()
 }
