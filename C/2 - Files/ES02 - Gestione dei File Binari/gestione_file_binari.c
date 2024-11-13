@@ -36,17 +36,24 @@ int main()
 
 void scrivifile(char* nomefile)
 {
-    persona buffer[N];
+    persona buffer;
 
     FILE* pfile = fopen(nomefile, "wb");
 
     for(int i = 0; i < N; i++)
     {
         printf("Inserisci Nome: ");
-        scanf("%s", buffer[i].nome);
+        scanf("%s", buffer.nome);
         printf("Inserisci cognome: ");
-        scanf("%s", buffer[i].cognome);
+        scanf("%s", buffer.cognome);
 
         fwrite(&buffer, sizeof(persona), 1, pfile);
     }
+}
+
+void stampafile(char* nomefile)
+{
+    persona buffer;
+
+    FILE* pfile = fopen(nomefile, "rb");
 }
