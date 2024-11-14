@@ -19,15 +19,16 @@ typedef struct
 } persona;
 
 void scrivifile(char* nomefile);
-void leggifile(FILE* pfile);
+void stampafile(char* nomefile);
 
 
 
 int main()
 {
-    char* nomefile = {"TestFiles/testo1.dat"}; // char nomefile[] = {ciao}
+    char* nomefile = {"TestFiles/testo1.dat"}; 
 
     scrivifile(nomefile);
+    stampafile(nomefile);
 
     return 0;
 }
@@ -49,11 +50,23 @@ void scrivifile(char* nomefile)
 
         fwrite(&buffer, sizeof(persona), 1, pfile);
     }
+
+    fclose(pfile);
 }
+
+
 
 void stampafile(char* nomefile)
 {
     persona buffer;
 
     FILE* pfile = fopen(nomefile, "rb");
+
+    while(fread(&buffer, sizeof(persona), N, pfile))
+    {
+        printf("%s", buffer.nome);
+        printf("%s", buffer.cognome);
+    }
+
+    fclose(pfile);
 }
