@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define N 3
 
@@ -20,8 +21,7 @@ typedef struct
 
 void scrivifile(char* nomefile);
 void stampafile(char* nomefile);
-
-
+int contacognome(char* nomefile);
 
 int main()
 {
@@ -29,6 +29,10 @@ int main()
 
     scrivifile(nomefile);
     stampafile(nomefile);
+    int conta = contacognome(nomefile);
+
+    if(conta == 0) {printf("Il cognome non è presente nel registro.\n");}
+    else {printf("Il cognome da lei cercato è presente %d volte\n", conta);}
 
     return 0;
 }
@@ -62,11 +66,35 @@ void stampafile(char* nomefile)
 
     FILE* pfile = fopen(nomefile, "rb");
 
-    while(fread(&buffer, sizeof(persona), N, pfile))
+    while(fread(&buffer, sizeof(persona), 1, pfile) == 1)
     {
-        printf("%s", buffer.nome);
-        printf("%s", buffer.cognome);
+        printf("Nome: %s\n", buffer.nome);
+        printf("Cognome: %s\n", buffer.cognome);
+        printf("------------------------------------------\n");
     }
+
+    fclose(pfile);
+}
+
+
+
+int contacognome(char* nomefile)
+{
+    char cognome[20];
+    persona buffer;
+    int cont = 0;
+    FILE* pfile = fopen(nomefile, "rb");
+
+    printf("Inserisci cognome da ricercare: ");
+    scanf("%s", cognome);
+
+    while(fread(&buffer, sizeof(persona), 1, pfile))
+    {
+        if(strcmp(buffer.cognome, cognome) == 0)
+            cont ++;
+    }
+
+    return cont;
 
     fclose(pfile);
 }
