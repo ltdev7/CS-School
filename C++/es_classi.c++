@@ -33,9 +33,23 @@ int main()
     area = setAltezza(base, altezza);
 
     double oggetto1.setBase(2);
+
+    cout >> perimetro
 }
 
-int setBase(int base)
+int setBase(double base)
 {
     return base;
+}
+
+int setAltezza(double altezza)
+{
+    return altezza;
+}
+
+int calcolaPerimetro(double base, double altezza)
+{
+    perimetro = 2(base + altezza);
+
+    return perimetro;
 }
