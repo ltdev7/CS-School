@@ -32,9 +32,12 @@ int main()
     perimetro = setPerimetro(base, altezza);
     area = setAltezza(base, altezza);
 
+    cout << "Inserisci la base:";
+    
+    cout << "Inserisci l'altezza";
     double oggetto1.setBase(2);
 
-    cout >> perimetro
+    cout << perimetro;
 }
 
 int setBase(double base)
