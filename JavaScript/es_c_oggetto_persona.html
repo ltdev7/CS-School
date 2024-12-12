@@ -11,14 +11,18 @@
 
 <!DOCTYPE html>
 <html>
-    <body>
-        <script>
-            let persona = {
-                nome: prompt("Inserire il nome:"),
-                cognome: prompt("Inserisci il cognome:"),
-                nascita: prompt("Inserire la data di nascita:"),
-            }
-            console.log(persona)
-        </script>
-    </body>
+<head>
+    <title>Esito</title>
+</head>
+<body>
+    <h1>Calcolo dell'Esito</h1>
+
+    <script>
+        let voto = 7; 
+
+        let esito = (voto >= 6) ? "Promosso" : "Bocciato";
+
+        console.log("Esito:", esito);
+    </script>
+</body>
 </html>
