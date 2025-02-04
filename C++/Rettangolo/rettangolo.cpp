@@ -1,25 +1,34 @@
-#ifndef "rettangolo.h"
 #include "rettangolo.h"
 #include <iostream>
 #include <cmath>
 
-void rettangolo :: SetBase(double b)
+using namespace std;
+
+Rettangolo::Rettangolo() {}; 
+
+void Rettangolo::SetBase(double b)
 {
     this -> base = b;
 }
 
-double rettangolo :: GetBase()
-{
-    return this -> base;
-}
-
-void rettangolo :: SetAltezza(double a)
+void Rettangolo::SetAltezza(double a)
 {
     this -> altezza = a;
 }
 
-double rettangolo :: GetAltezza(double b)
+void Rettangolo::GetBase()
 {
-    return this -> altezza;
+    cout << "La base e': " << base << endl;
 }
 
+void Rettangolo::GetAltezza()
+{
+    cout << "L' altezza e': " << altezza << endl;
+}
+
+void Rettangolo::GetArea()
+{
+    double area = base * altezza;
+
+    cout << "L'area e': " << area << endl;
+}

@@ -1,16 +1,14 @@
 #include "rettangolo.h"
-#include <iostream>
 
-using namespace std;
+#include <iostream>
+#include <cmath>
 
 int main()
 {
-    rettangolo r;
-
-    r.SetBase(4);
-    r.SetAltezza(5);
-    double rettangolo :: b = r.GetBase;
-    double rettangolo :: a = r.GetAltezza;
-
-    cout << b << endl;
+    Rettangolo rettangolo;
+    rettangolo.SetBase(2);
+    rettangolo.SetAltezza(4);
+    rettangolo.GetBase();
+    rettangolo.GetAltezza();
+    rettangolo.GetArea();
 }

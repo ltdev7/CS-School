@@ -1,13 +1,20 @@
+#ifndef RETTANGOLO_H
+#define RETTANGOLO_H
 #include <iostream>
+#include <cmath>
 
-class rettangolo
+class Rettangolo
 {
     private:
         double base;
         double altezza;
     public:
-        double GetBase() {}
-        double GetAltezza() {}
-        int SetBase(double b) {}
-        int SetAltezza(double a) {}
-}
+        Rettangolo();
+        void SetBase(double b);
+        void SetAltezza(double a);
+        void GetBase();
+        void GetAltezza();
+        void GetArea();
+};
+
+#endif
