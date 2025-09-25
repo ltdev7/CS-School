@@ -11,7 +11,7 @@
     <body>
         <h2>Edit Profile</h2>
         <hr>
-        <form action="https://www.google.com" method="POST">
+        <form action="https://www.google.com" method="GET">
         
             <!-- Upload Profile Pic -->
             <label class="spazio">Your Profile Photo</label>
@@ -33,7 +33,17 @@
 
             <!-- Birth Date -->
             <label class="spazio5">Birth Date</label>
-            <input type="date" name="bdate"><br><br>
+            <input type="date" name="bdate"><br>
+            <label class="hidden">This is hidden by default on your profile</label><br><br>
+
+            <label class="spazio9">Choose your country</label>
+
+            <select name="country">
+                <option value="Italy">Italy</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="Other">Other...</option>
+            </select><br><br>
 
             <!-- About you -->
             <label>About you</label><br><br>

@@ -29,3 +29,13 @@
 .spazio8 {
     padding-right: 300px;
 }
+
+.spazio9 {
+    padding-right: 30px;
+}
+
+.hidden {
+    font-size: small;
+    color: gray;
+    padding-left: 120px;
+}
