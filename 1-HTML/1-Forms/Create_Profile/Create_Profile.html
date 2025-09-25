@@ -1,32 +1,38 @@
+<!-- 18/9/2025
+ Name: Lorenzo Tarragoni
+ Goal: Create a form that asks for the following informations. -->
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Create Profile</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h2>Edit Profile</h2>
+        <hr>
         <form action="https://www.google.com" method="POST">
         
             <!-- Upload Profile Pic -->
-            <label>Your Profile Photo</label>
+            <label class="spazio">Your Profile Photo</label>
             <input type="text">
             <input type="file" name="photo"><br><br>
 
             <!-- Name and Surname -->
-            <label>Your First Name</label>
+            <label class="spazio2">Your First Name</label>
             <input type="text" name="pname"><br><br>
-            <label>Your Last Name</label>
+            <label class="spazio3">Your Last Name</label>
             <input type="text" name="psurname"><br><br>
 
             <!-- Gender -->
-            <label>Gender</label>
+            <label class="spazio4">Gender</label>
             <input type="radio" name="gender" value="Male">
             <label>female</label>
             <input type="radio" name="gender" value="Male">
             <label>male</label><br><br>
 
             <!-- Birth Date -->
-            <label>Birth Date</label>
+            <label class="spazio5">Birth Date</label>
             <input type="date" name="bdate"><br><br>
 
             <!-- About you -->
@@ -34,13 +40,14 @@
             <textarea name="about" rows="7" cols="30"></textarea><br><br>
 
             <!-- Web Site -->
-            <label>Your Web Site url</label>
+            <label class="spazio6">Your Web Site url</label>
             <input type="url" name="url"><br><br>
 
-            <label>Your Web Site name</label>
+            <label class="spazio7">Your Web Site name</label>
             <input type="text" name="urlname"><br><br>
 
             <!-- Submit Button -->
+            <label class="spazio8"></label>
             <button type="submit">Create Profile ></button>
         </form>
     </body>
