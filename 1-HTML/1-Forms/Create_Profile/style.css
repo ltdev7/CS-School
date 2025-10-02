@@ -34,8 +34,37 @@
     padding-right: 30px;
 }
 
+.spazio10 {
+    padding-right: 68px;
+}
+
+.spazio11 {
+    padding-right: 95px;
+}
+
+.spazio12 {
+    padding-right: 72px;
+}
+
+.spazio13 {
+    padding-right: 49px;
+}
+
 .hidden {
     font-size: small;
     color: gray;
     padding-left: 120px;
+}
+
+.title {
+    background: pink;
+    padding: 3px;
+    margin: -8px;
+}
+
+.box1 {
+    outline-style: outset;
+    outline: ridge thick pink;
+    padding: 10px;
+    width: max-content;
 }

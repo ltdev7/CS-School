@@ -9,41 +9,70 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h2>Edit Profile</h2>
+        <div class="title">
+            <h2>&nbsp;Edit Profile</h2>
+        </div>    
         <hr>
+        
         <form action="https://www.google.com" method="GET">
         
-            <!-- Upload Profile Pic -->
-            <label class="spazio">Your Profile Photo</label>
-            <input type="text">
-            <input type="file" name="photo"><br><br>
+            <div class="box1">
+                <!-- Upload Profile Pic -->
+                <label class="spazio">Your Profile Photo</label>
+                <input type="text">
+                <input type="file" name="photo"><br>
+            </div><br>
 
-            <!-- Name and Surname -->
-            <label class="spazio2">Your First Name</label>
-            <input type="text" name="pname"><br><br>
-            <label class="spazio3">Your Last Name</label>
-            <input type="text" name="psurname"><br><br>
+            <div class="box1">
+                <!-- Name and Surname -->
+                <label class="spazio2">Your First Name</label>
+                <input type="text" name="pname"><br><br>
+                <label class="spazio3">Your Last Name</label>
+                <input type="text" name="psurname"><br><br>
+                <label class="spazio10">Your Nickname</label>
+                <input type="text" name="pnickname"><br>
+            </div><br>
 
-            <!-- Gender -->
-            <label class="spazio4">Gender</label>
-            <input type="radio" name="gender" value="Male">
-            <label>female</label>
-            <input type="radio" name="gender" value="Male">
-            <label>male</label><br><br>
+            <div class="box1">
+                <label class="spazio11">Your Email</label>
+                <input type="email" name="pemail"><br><br>
+                <label class="spazio12">Your Password</label>
+                <input type="password" name="ppassword"><br><br>
+                <label class="spazio13">Confirm Password</label>
+                <input type="password" name="ppassword2"><br>
+            </div><br>
 
-            <!-- Birth Date -->
-            <label class="spazio5">Birth Date</label>
-            <input type="date" name="bdate"><br>
-            <label class="hidden">This is hidden by default on your profile</label><br><br>
+            <div class="box1">
+                <!-- Gender -->
+                <label class="spazio4">Gender</label>
+                <input type="radio" name="gender" value="Male">
+                <label>female</label>
+                <input type="radio" name="gender" value="Male">
+                <label>male</label><br><br>
+                <!-- Birth Date -->
+                <label class="spazio5">Birth Date</label>
+                <input type="date" name="bdate"><br>
+                <label class="hidden">This is hidden by default on your profile</label><br>
+            </div><br>
 
-            <label class="spazio9">Choose your country</label>
-
-            <select name="country">
-                <option value="Italy">Italy</option>
-                <option value="France">France</option>
-                <option value="Spain">Spain</option>
-                <option value="Other">Other...</option>
-            </select><br><br>
+            <div class="box1">
+                <label class="spazio9">Choose your country</label>
+                <select name="country">
+                    <option value="Italy">Italy</option>
+                    <option value="France">France</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Other">Other...</option>
+                </select><br><br>
+                <label>Choose your language</label><br>
+                <input type="checkbox" name="language" value="English">
+                <label>English</label><br>
+                <input type="checkbox" name="language" value="Italian">
+                <label>Italian</label><br>
+                <input type="checkbox" name="language" value="Spanish">
+                <label>Spanish</label><br>
+                <input type="checkbox" name="language" value="French">
+                <label>French</label><br>
+            </div><br><br>
 
             <!-- About you -->
             <label>About you</label><br><br>
