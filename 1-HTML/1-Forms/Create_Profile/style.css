@@ -68,3 +68,11 @@
     padding: 10px;
     width: max-content;
 }
+
+.HelloKitty {
+    position: absolute;      
+    top: 150px;         
+    right: 0;
+    margin: 0;            
+    padding: 0;
+}
